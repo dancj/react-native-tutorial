@@ -17,6 +17,12 @@ Must have android paths set up in $PATH env variable.
 Run things with npx, which uses an online version of react-native somehow.  For example:
 `npx react-native run-ios`
 
+## AWS
+
+https://docs.amplify.aws/start/getting-started/setup/q/integration/react-native
+just run `amplify init` and follow the wizard
+
+
 
 ## Running
 
