@@ -5,6 +5,7 @@ import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 import { API, graphqlOperation } from 'aws-amplify'
 import { createTodo } from './src/graphql/mutations'
 import { listTodos } from './src/graphql/queries'
+import { withAuthenticator } from 'aws-amplify-react-native'
 
 const initialState = { name: '', description: '' }
 
@@ -12,7 +13,7 @@ const App = () => {
   const [formState, setFormState] = useState(initialState)
   const [todos, setTodos] = useState([])
 
-  useEffect(() => {
+  useEffect(() => {  // hook called when component loads
     fetchTodos()
   }, [])
 
